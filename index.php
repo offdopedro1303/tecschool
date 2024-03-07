@@ -7,16 +7,27 @@
     <title>TEC.SCHOOL</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <style>
+
+        .montserrat-uniquifier {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: "Montserrat", sans-serif;
             background-color: rgba(220, 255, 230, 1);
         }
 
         .navbar {
             background-color: #f5f5f5;
-            padding: 10px;
+            padding: 30px;
             text-align: center;
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
         }
