@@ -125,29 +125,11 @@
 <br>
     <div class="main-content">
         <form action="cadastrar.php" method="post">
-            <h1>TEC.SCHOOL</h1>
-            <h5 style="color: rgba(0, 255, 10, 1); margin-top: -10px;">Cadastrar Aluno</h5>
-            <input class="input" name="nome" placeholder="Nome">
-            <br>
-            <input class="input" type="date" name="data" placeholder="Data de Nascimento">
-            <br>
-            <select class="input" name="curso" required="required">
-                <option name="curso" value="DEV">Desenvolvimento de Sistemas</option>
-                <option name="curso" value="ELT">Eletroeletrônica</option>
-            </select>
-            <br>
-            <input class="input" name="rm" placeholder="RM" type="number" maxlength="4">
-            <br>
-            <br>
-            <a style="color: rgba(0, 255, 10, 1);" class="sexo">Sexo:</a>
-            <br>
-            <input type="radio" name="sexo" value="Masculino" id="masc">
-            <label for="masc" style="color: #f5f5f5;">Masculino</label>
-            <input type="radio" name="sexo" value="Feminino" id="fem">
-            <label for="fem" style="color: #f5f5f5;">Feminino</label>
-            <br>
-            <br>
-            <button type="submit">Enviar</button>
+            <input type="number" max="10" id="num1" onfocus="matricula()">
+            <input type="number" max="10" id="num2" onblur="matricula()">
+            <input type="number" max="10" id="num3" onblur="matricula()">
+            <input type="number" max="10" id="num4" onblur="matricula()">
+            <input type="number" max="10" id="resultado">
         </form>
     </div>
 <br>
@@ -156,4 +138,19 @@
         &copy; 2024 TEC.SCHOOL. Todos os direitos reservados.
     </footer>
 </body>
+<script>
+function matricula(){
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
+    let num3 = parseFloat(document.getElementById('num3').value);
+    let num4 = parseFloat(document.getElementById('num4').value);
+
+
+    if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3) && !isNaN(num4)) {
+        document.getElementById('resultado').value = (num1 + num2 + num3 + num4) / 4;
+    } else {
+        document.getElementById('resultado').value = '';
+    }
+}
+    </script>
 </html>
