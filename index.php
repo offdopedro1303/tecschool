@@ -124,16 +124,16 @@
 <br>
 <br>
     <div class="main-content">
-        <form action="cadastrar.php">
+        <form action="cadastrar.php" method="post">
             <h1>TEC.SCHOOL</h1>
             <h5 style="color: rgba(0, 255, 10, 1); margin-top: -10px;">Cadastrar Aluno</h5>
             <input class="input" name="nome" placeholder="Nome">
             <br>
             <input class="input" type="date" name="data" placeholder="Data de Nascimento">
             <br>
-            <select class="input" name="linguagem" required="required">
-                <option value="devsis">Desenvolvimento de Sistemas</option>
-                <option value="eletro">Eletroeletrônica</option>
+            <select class="input" name="curso" required="required">
+                <option name="curso" value="DEV">Desenvolvimento de Sistemas</option>
+                <option name="curso" value="ELT">Eletroeletrônica</option>
             </select>
             <br>
             <input class="input" name="rm" placeholder="RM" type="number" maxlength="4">
@@ -141,9 +141,9 @@
             <br>
             <a style="color: rgba(0, 255, 10, 1);" class="sexo">Sexo:</a>
             <br>
-            <input type="radio" name="sexo" id="masc">
+            <input type="radio" name="sexo" value="Masculino" id="masc">
             <label for="masc" style="color: #f5f5f5;">Masculino</label>
-            <input type="radio" name="sexo" id="fem">
+            <input type="radio" name="sexo" value="Feminino" id="fem">
             <label for="fem" style="color: #f5f5f5;">Feminino</label>
             <br>
             <br>
